@@ -55,7 +55,8 @@
     "secure-filters": "^1.0.5",
     "stats-lite": "^2.0.1",
     "uuid": "^2.0.1",
-    "winchan": "^0.1.1"
+    "winchan": "^0.1.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-eslint": "^6.0.4",
@@ -83,6 +84,9 @@
     "delete-app": "babel-node bin/delete-app",
     "print-schema": "babel-node bin/print-schema.js",
     "benchmark": "DATABASE_TYPE=MongoDB babel-node bin/run-benchmark",
-    "graphiql": "cd ./public/reindex-graphiql && npm install && npm run build && cd ../ && cp reindex-graphiql/public/static/* static/"
-  }
+    "graphiql": "cd ./public/reindex-graphiql && npm install && npm run build && cd ../ && cp reindex-graphiql/public/static/* static/",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
