@@ -27,7 +27,7 @@
     "bluebird": "^2.10.2",
     "boom": "^3.0.0",
     "cli-table": "^0.3.1",
-    "convict": "^1.0.1",
+    "convict": "^6.0.0",
     "cryptiles": "^3.0.0",
     "dataloader": "^1.2.0",
     "dot": "^1.0.3",
